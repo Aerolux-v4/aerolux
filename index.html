@@ -6,20 +6,38 @@
         </head>
         <style>
             body{
-            padding: 0%;
-            background-color: rgb(174, 209, 240);
+                .flexrow {
+                    display: flex;
+                    justify-content: space-around;
+                }
+                padding: 0%;
+                background-color: rgb(174, 209, 240);
             }
-            #foto1 {
-                width:35%;
+            .fotos {
+                width:100%;
             }
-            div {
-                border: 1px
+            
+            .box {
+                border: 1px solid black;
+                width: 40%;
+                text-align: centre;
+            }
+                
+
         </style>
     </head>
     <body>
 <h1 style="font-size: 50px ;">Aerolux Plane Rental</h1>
-<img id="foto1" src="https://cessna.txtav.com/-/media/cessna/images/aircraft/turboprop/caravan/caravan-208-hero.jpg" alt="Cessna caravan 208">
-<a href="https://nl.wikipedia.org/wiki/Cessna_208">Cessna 208</a>
-<p style="font-size: 25px ;">Cessna 208 from $350 an hour</p>
+<div class="flexrow">
+<div class="box">
+    <img class="fotos" src="https://cessna.txtav.com/-/media/cessna/images/aircraft/turboprop/caravan/caravan-208-hero.jpg" alt="Cessna caravan 208">
+    <a href="https://nl.wikipedia.org/wiki/Cessna_208">Cessna 208</a>
+    <p style="font-size: 25px ;">Cessna 208 from $350 an hour</p>
+</div>
+<div class="box">
+    <img class="fotos" src="https://www.aircharteradvisors.com/wp-content/uploads/2012/07/Cessna-Citation-CJ1-e1568986025146.jpg" alt="Cessna CJ1">
+    <a href="https://nl.wikipedia.org/wiki/Cessna_Citation_I">Cessna CJ1</a>
+    <p style="font-size: 25px;">Cessna CJ1 from $550 an hour</p>
+</div>
     </body>
 </html>
